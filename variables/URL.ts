@@ -1,0 +1,17 @@
+const url = new URL('https://www.baidu.com?q=abc')
+
+console.log('hash: ', url.hash)
+console.log('host: ', url.host)
+console.log('hostname: ', url.hostname)
+console.log('href: ', url.href)
+console.log('origin: ', url.origin)
+console.log('password: ', url.password)
+console.log('port: ', url.port)
+console.log('protocol: ', url.protocol)
+console.log('search: ', url.search)
+console.log('searchParams: ', url.searchParams)
+console.log('username: ', url.username)
+
+url.searchParams.append('key', 'searchKey')
+console.log(url.searchParams.get('q'))
+console.log('search: ', url.search)
