@@ -1,1 +1,1 @@
-得分数
+file write contents
