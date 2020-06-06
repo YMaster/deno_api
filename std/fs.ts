@@ -43,19 +43,17 @@ ensureSymlinkSync('./folder/targetFile.dat', './folder/targetFile.link.dat')
  * 检测并格式化目标行尾字符的传递字符串。
  * 下面 detect 和 format 只有最后两个我打印可以看出来结果，其它的看不出来
  */
-/*
-  const CRLFinput = 'deno\r\nis not\r\nnode'
-  const Mixedinput = 'deno\nis not\r\nnode'
-  const LFinput = 'deno\nis not\nnode'
-  const NoNLinput = 'deno is not node'
+const CRLFinput = 'deno\r\nis not\r\nnode'
+const Mixedinput = 'deno\nis not\r\nnode'
+const LFinput = 'deno\nis not\nnode'
+const NoNLinput = 'deno is not node'
 
-  detect(LFinput)     // output EOL.LF
-  detect(CRLFinput)   // output EOL.CRLF
-  detect(Mixedinput)  // output EOL.CRLF
-  detect(NoNLinput)   // output null
+detect(LFinput)     // output EOL.LF
+detect(CRLFinput)   // output EOL.CRLF
+detect(Mixedinput)  // output EOL.CRLF
+detect(NoNLinput)   // output null
 
-  format(CRLFinput, EOL.LF)  // output "deno\nis not\nnode"
-*/
+format(CRLFinput, EOL.LF)  // output "deno\nis not\nnode"
 
 /**
  * exists、existsSync
