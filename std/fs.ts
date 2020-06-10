@@ -29,14 +29,14 @@ ensureDirSync('./ensureDirSync')
 /**
  * 确保文件存在，相对应的目录不存在则会创建这些目录，如果文件已经存在则不会做任何事
  */
-ensureFile('./folder/targetFile.dat')   // returns promise
-ensureFileSync('./folder/targetFile.dat')  // void
+ensureFile('./files/folder/targetFile.dat')   // returns promise
+ensureFileSync('./files/folder/targetFile.dat')  // void
 
 /**
  * 确保一个快捷方式的存在，如果不存在则会创建它
  */
-ensureSymlink('./folder/targetFile.dat', './folder/targetFile.link.dat')
-ensureSymlinkSync('./folder/targetFile.dat', './folder/targetFile.link.dat')
+ensureSymlink('./files/folder/targetFile.dat', './files/folder/targetFile.link.dat')
+ensureSymlinkSync('./files/folder/targetFile.dat', './files/folder/targetFile.link.dat')
 
 /**
  * EOL、detect、format
