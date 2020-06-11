@@ -36,7 +36,7 @@ ensureFileSync('./files/folder/targetFile.dat')  // void
  * 确保一个快捷方式的存在，如果不存在则会创建它
  */
 ensureSymlink('./files/folder/targetFile.dat', './files/folder/targetFile.link.dat')
-ensureSymlinkSync('./files/folder/targetFile.dat', './files/folder/targetFile.link.dat')
+// ensureSymlinkSync('./files/folder/targetFile.dat', './files/folder/targetFile.link.dat')
 
 /**
  * EOL、detect、format
